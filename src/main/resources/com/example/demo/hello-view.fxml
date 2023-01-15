@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-position-shape: relative; -fx-pref-width: 1000; -fx-pref-height: 571.43; -fx-background-image: url('https://th.bing.com/th/id/R.7bc956f2e0d3c5ec887bbcb2aa0a2adf?rik=EhLuJcmz%2btVPaQ&amp;pid=ImgRaw&amp;r=0');" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <AnchorPane layoutY="28.0" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 1000; -fx-pref-height: 514.29; -fx-background-color: #25272A; -fx-opacity: 0.75;">
+            <children>
+               <Pane fx:id="errorMessage" layoutX="417.0" layoutY="424.0" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-background-color: #D9D9D9; -fx-pref-width: 165.71; -fx-pref-height: 50; -fx-background-radius: 15; -fx-opacity: 0;">
+                  <children>
+                     <Text fx:id="errorText" fill="RED" layoutX="6.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Lato'; -fx-font-style: italic; -fx-font-weight: 700; -fx-text-alignment: center;" text="Wrong port, please, try again" wrappingWidth="153.673828125" />
+                  </children>
+               </Pane>
+            </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 1000; -fx-pref-height: 28.57; -fx-background-color: black; opacity: 0.7;" />
+            <AnchorPane layoutY="542.86" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 1000; -fx-pref-height: 28.57; -fx-background-color: black; opacity: 0.7;" />
+            <AnchorPane layoutX="363.57" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 272.14; -fx-pref-height: 272.14; -fx-border-width: 2.14286; -fx-border-style: solid; -fx-border-color: #6F7A86; -fx-border-radius: 22.8571;">
+                <children>
+                    <Text fill="WHITE" layoutX="112.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 700; -fx-font-size: 14.2857; -fx-text-alignment: center;" text="LOG IN" />
+               <Circle fx:id="circle" accessibleRole="BUTTON" fill="#d9d9d9" layoutX="134.0" layoutY="96.0" radius="43.57" stroke="BLACK" strokeLineCap="ROUND" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" />
+               <Button id="photoChoose" layoutX="54.0" layoutY="96.0" mnemonicParsing="false" onAction="#clickLeft" prefHeight="95.0" prefWidth="83.0" rotate="270.0" style="-fx-position-shape: absolute; -fx-background-color: #D9D9D9; -fx-shape: &quot;M150 0 L75 200 L225 200 Z&quot;; -fx-pref-width: 25; -fx-pref-height: 25;" />
+               <Button id="photoChoose" layoutX="189.0" layoutY="71.0" mnemonicParsing="false" onAction="#clickRight" prefHeight="95.0" prefWidth="83.0" rotate="90.0" style="-fx-position-shape: absolute; -fx-background-color: #D9D9D9; -fx-shape: &quot;M150 0 L75 200 L225 200 Z&quot;; -fx-pref-width: 25; -fx-pref-height: 25;" />
+                </children>
+            </AnchorPane>
+            <TextField id="usernameInput" fx:id="usernameInput" layoutX="417.14" layoutY="309.29" promptText="Username" style="-fx-position-shape: absolute; -fx-pref-width: 165.71; -fx-pref-height: 21.43; -fx-background-color: #D9D9D9; -fx-background-radius: 15; -fx-font-family: 'Lato'; -fx-font-style: italic; -fx-font-weight: 500; -fx-alignment: center; -fx-text-inner-color: #6F7A86; -fx-prompt-text-fill: #6F7A86;" />
+            <TextField id="portInput" fx:id="portInput" layoutX="417.14" layoutY="341.43" promptText="Port" style="-fx-position-shape: absolute; -fx-pref-width: 165.71; -fx-pref-height: 21.43; -fx-background-color: #D9D9D9; -fx-background-radius: 15; -fx-font-family: 'Lato'; -fx-font-style: italic; -fx-font-weight: 500; -fx-alignment: center; -fx-text-inner-color: #6F7A86; -fx-prompt-text-fill: #6F7A86;" />
+            <Button id="logInButton" layoutX="452.14" layoutY="380.71" mnemonicParsing="false" onAction="#onLogInClick" style="-fx-position-shape: absolute; -fx-background-color: #3577EF; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 700; -fx-text-alignment: center; -fx-pref-width: 95.36; -fx-pref-height: 17.86; -fx-background-radius: 7.5;" text="Log in" textFill="WHITE" />
+        </children>
+    </AnchorPane>
+</VBox>

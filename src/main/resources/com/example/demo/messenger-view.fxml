@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+
+    <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white; -fx-position-shape: relative; -fx-pref-width: 1000; -fx-pref-height: 571.43; -fx-background-image: url('https://th.bing.com/th/id/R.7bc956f2e0d3c5ec887bbcb2aa0a2adf?rik=EhLuJcmz%2btVPaQ&amp;pid=ImgRaw&amp;r=0');" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+        <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 1000; -fx-pref-height: 28.57; -fx-background-color: black; opacity: 0.7;" />
+            <AnchorPane layoutY="544.0" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 1000; -fx-pref-height: 28.57; -fx-background-color: black; opacity: 0.7;" />
+         <AnchorPane layoutX="857.14" layoutY="28.57" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 142.86; -fx-pref-height: 514.29; -fx-background-color: #D0D3D7;">
+            <children>
+               <Text fx:id="username" layoutX="15.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" style="fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 700; -fx-font-size: 18.2857;" text="Username">
+                  <font>
+                     <Font size="16.0" />
+                  </font>
+               </Text>
+               <Text fx:id="port" fill="#8d8d8d" layoutX="15.0" layoutY="190.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: italic; -fx-font-weight: 400;" text="PORTS" />
+               <Rectangle fx:id="avatar" arcHeight="5.0" fill="DODGERBLUE" height="142.86" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="142.86" />
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="185.71" layoutY="492.14" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 671.43; -fx-pref-height: 0.71; -fx-background-color: #C2C2C2;" />
+         <AnchorPane layoutX="185.71" layoutY="492.86" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 671.43; -fx-pref-height: 50; -fx-background-color: white;">
+            <children>
+               <TextField fx:id="messageText" layoutX="23.5" layoutY="12.0" onKeyPressed="#sendWithEnter" promptText="Message" style="-fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 400; -fx-font-size: 12; -fx-background-color: white; -fx-pref-width: 570; -fx-text-inner-color: #8D8D8D; -fx-prompt-text-fill: #8D8D8D;" />
+               <Button layoutX="627.0" layoutY="12.0" mnemonicParsing="false" onAction="#sendMessage" prefHeight="29.0" prefWidth="42.0" style="-fx-background-color: white; -fx-position-shape: absolute; -fx-pref-height: 20; -fx-pref-width: 20; -fx-background-image: url('https://th.bing.com/th/id/OIP.bSZqqhzyRUivMOohLkD8BgAAAA?pid=ImgDet&amp;rs=1'); -fx-background-repeat: no-repeat; -fx-background-size: 20 20; -fx-background-position: center center; -fx-opacity: 0.5;" textFill="#8d8d8d" />
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="185.71" layoutY="28.57" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 671.43; -fx-pref-height: 50; -fx-background-color: white;">
+            <children>
+               <Text layoutX="25.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" style="fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 700; -fx-font-size: 16.2857;" text="Chat" />
+               <Button layoutX="623.0" layoutY="13.0" mnemonicParsing="false" onAction="#logOut" prefHeight="22.0" prefWidth="32.0" rotate="180.0" style="-fx-background-color: #FFFFFF; -fx-pref-height: 20; -fx-pref-width: 25; -fx-position-shape: absolute; -fx-background-image: url('https://th.bing.com/th/id/R.8094345c6094350b57b158016e13e710?rik=5g0jjPLwEa0lKQ&amp;riu=http%3a%2f%2ffreeiconbox.com%2ficon%2f256%2f25376.png&amp;ehk=wQ0W6TDySmZoeOiWwgqPvQ4siadH5yHKZtlME6oOTEo%3d&amp;risl=&amp;pid=ImgRaw&amp;r=0'); -fx-background-repeat: no-repeat; -fx-background-size: 30 20; -fx-background-position: center center;" />
+            </children>
+         </AnchorPane>
+         <AnchorPane fx:id="portsInfo" layoutY="28.57" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 185.71; -fx-pref-height: 514.29; -fx-background-color: #25272A; -fx-opacity: 0.75;">
+            <children>
+               <Text fill="#919191" layoutX="25.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 700;" text="PORTS">
+                  <font>
+                     <Font size="10.0" />
+                  </font>
+               </Text>
+               <Text fill="WHITE" layoutX="25.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" style="fx-position-shape: absolute; -fx-font-family: 'Lato'; -fx-font-style: normal; -fx-font-weight: 700; -fx-font-size: 16.2857;" text="Tools" />
+               <TextField fx:id="portText" layoutX="25.0" layoutY="83.0" promptText="add port" style="-fx-position-shape: absolute; -fx-pref-width: 110; -fx-pref-height: 20; -fx-font-family: 'Lato'; -fx-font-style: italic; -fx-font-weight: 400; -fx-text-inner-color: #6F7A86; -fx-prompt-text-fill: #6F7A86; -fx-background-color: #3e3d3d;">
+                  <font>
+                     <Font size="10.0" />
+                  </font>
+               </TextField>
+               <Button fx:id="portButton" layoutX="132.0" layoutY="82.5" mnemonicParsing="false" onAction="#addPort" style="-fx-position-shape: absolute; -fx-pref-width: 20; -fx-pref-height: 20; -fx-background-color: #1a1c21; -fx-border-radius: 4.28571;" text="+" textFill="WHITE">
+                  <font>
+                     <Font size="10.0" />
+                  </font>
+               </Button>
+               <Text fx:id="errorText" fill="RED" layoutX="31.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: 'Lato'; -fx-font-style: italic; -fx-font-weight: 400; -fx-opacity: 0;" text="Wrong port id, try again">
+                  <font>
+                     <Font size="11.0" />
+                  </font>
+               </Text>
+            </children>
+         </AnchorPane>
+         <AnchorPane layoutX="185.71" layoutY="80.0" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 671.43; -fx-pref-height: 0.71; -fx-background-color: grey;" />
+         <ScrollPane fx:id="scrollPane" layoutX="186.5" layoutY="78.57" prefHeight="200.0" prefWidth="200.0" style="-fx-position-shape: absolute; -fx-pref-width: 670.64; -fx-background-color: white; -fx-pref-height: 414.29;">
+           <content>
+             <AnchorPane fx:id="messagePane" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white; -fx-pref-width: 656; -fx-pref-height: 412;" />
+           </content>
+         </ScrollPane>
+        </children>
+    </AnchorPane>
+</VBox>

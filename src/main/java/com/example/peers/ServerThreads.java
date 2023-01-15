@@ -1,9 +1,14 @@
+package com.example.peers;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/**
+ * Клас, що реалізує серверні сокети
+ */
 public class ServerThreads extends Thread{
     private ServerThread serverThread;
     private Socket socket;
@@ -14,6 +19,9 @@ public class ServerThreads extends Thread{
         this.serverThread=serverThread;
     }
 
+    /**
+     * Функція, що відправляє повідомлення користувача в якості клієнта іншим користувачам-серверам
+     */
     @Override
     public void run() {
         try{
@@ -25,5 +33,10 @@ public class ServerThreads extends Thread{
         }
     }
 
+    /**
+     * Функція, що повертає клас для форматування виводу
+     * @return
+     */
     public PrintWriter getPrintWriter() {return printWriter;}
 }
+
